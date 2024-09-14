@@ -12,17 +12,8 @@ codeunit 68100 "Extra Entry Function"
 
         if (GenJournalLine."Account Type" <> GenJournalLine."Account Type"::"G/L Account") then
             exit;
-
         ExtraEntrySetup.SetRange("Source Code", GenJournalLine."Source Code");
         ExtraEntrySetup.SetRange("G/L Account", GenJournalLine."Account No.");
-        //else
-        //   ExtraEntrySetup.SetRange("G/L Account", GenJournalLine."Bal. Account No.");
-
-
-
-        //if not ExtraEntrySetup.FindSet() then
-        //     ExtraEntrySetup.SetRange("G/L Account", GenJournalLine."Bal. Account No.");
-
         if not ExtraEntrySetup.FindFirst() then
             exit;
 
