@@ -39,7 +39,8 @@ codeunit 68100 "Extra Entry Function"
         GenJournalLineLocal := GenJournalLine;
         GenJournalLineLocal."Line No." := GetLastLineNo(GenJournalLine);
         GenJournalLineLocal.Validate("Account No.", ExtraEntrySetup."G/L Account Create");
-        GenJournalLineLocal.Validate("Bal. Account No.", ExtraEntrySetup."Bal. Account Create");
+        if ExtraEntrySetup."Bal. Account Create" <> '' then
+            GenJournalLineLocal.Validate("Bal. Account No.", ExtraEntrySetup."Bal. Account Create");
         if ExtraEntrySetup."Posting Description" <> '' then
             GenJournalLineLocal.Description := CopyStr(StrSubstNo(ExtraEntrySetup."Posting Description", GenJournalLineLocal.Description), 1, 100);
         GenJournalLineLocal.Insert(true);
