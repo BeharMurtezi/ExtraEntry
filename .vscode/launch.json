@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "PSQ LRF Dev",
+            "name": "sandbox",
             "type": "al",
             "request": "launch",
             "environmentType": "Sandbox",            
