@@ -1,0 +1,70 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PSQ LRF Dev",
+            "type": "al",
+            "request": "launch",
+            "environmentType": "Sandbox",            
+            "environmentName": "PSQ_LRF_3P",
+            "tenant": "c4cba57c-1902-49ec-a2d4-f83920ae0205",
+            "startupObjectId": 22,
+            "breakOnError": "All",
+            "breakOnRecordWrite": "None",
+            "launchBrowser": true,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,            
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "LRF Dev",
+            "type": "al",
+            "request": "launch",
+            "environmentType": "Sandbox",            
+            "environmentName": "DEV_LRF_3P",
+            "tenant": "c4cba57c-1902-49ec-a2d4-f83920ae0205",
+            "startupObjectId": 22,
+            "breakOnError": "All",
+            "breakOnRecordWrite": "None",
+            "launchBrowser": true,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,            
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "PSC cloud sandbox",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            "environmentName": "PSC_Aptean_Demo",
+            "tenant": "07d61bda-ec1e-4b93-9faa-3fedad1a1347",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "LRF Test",
+            "type": "al",
+            "request": "launch",
+            "environmentType": "Sandbox",
+            "environmentName": "PSQ_LRF_3P",
+            "tenant": "c4cba57c-1902-49ec-a2d4-f83920ae0205",            
+            "startupObjectId": 22,
+            "breakOnError": "All",
+            "breakOnRecordWrite": "None",
+            "launchBrowser": true,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10
+        }        
+    ]
+}
